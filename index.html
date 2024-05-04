@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIJAM</title>
+    <link rel="stylesheet" href="style.css">
+        <link
+            rel="icon"
+            href="CIJAMlogo.png"
+            type="image/x-icon"/>
+</head>
+<body>
+<header id="navbar" role="banner" class="">
+    <div class="container">
+        <div class="header">
+        	<img class="image" src="CIJAMlogo.png" alt="CIJAM logo">
+            <h1 class="logotext">Collectif Indépendant de Jeunes pour un Avenir Meilleur</h1>
+            <h2 class="brand" href="/fr" title="Jeunes Engagés, Avenir Assuré">"Jeunes Engagés, Avenir Assuré"</h2>
+        </div>
+<ul class="menu">
+    <li>
+        <button class="custom-button" style="color: #000000; background-color: #008000;">
+            <a href="/en/about-us" role="button" class="" aria-expanded="false" title="">Accueil</a>
+        </button>
+    </li>
+
+    <li>
+        <button class="custom-button">
+            <a href="/en/our-work" role="button" class="" aria-expanded="false" title="">Notre Mission</a>
+        </button>
+    </li>
+
+    <li>
+        <button class="custom-button">
+            <a href="/en/get-involved" role="button" title="" class="">Nos Commissions</a>
+        </button>
+    </li>
+    
+    <li>
+        <button class="custom-button">
+            <a href="https://cijam.github.io/cijam.notre_equipe/" role="button" class="" aria-expanded="false" title="">Notre Equipe</a>
+        </button>
+    </li>
+</ul>
+
+    </div>
+</header>
+
+<section id="main-content">
+    <div class="text-and-image-container">
+        <div class="text-container">
+	    <h1>AKWABA</h1>
+            <h2>Venez à la rencontre de la nouvelle génération de leaders politiques</h2>
+            <p>Bienvenue au Collectif Indépendant de Jeunes pour un Avenir Meilleur (C.I.J.A.M). Cette organisation neutre et autonome rassemble des jeunes de 15 à 19 ans, sans affiliation politique. Son objectif est de promouvoir l'engagement des jeunes dans les discussions relatives aux décisions stratégiques en matière de développement et aux orientations politiques qui façonneront l'avenir de la Côte d'Ivoire, conformément aux aspirations des générations actuelles. Nous aspirons à démontrer à la jeunesse son rôle crucial dans les processus décisionnels, car, pour nous, la politique concerne l'ensemble de la société, y compris la jeunesse.</p>
+        </div>
+        <div class="image-container">
+            <img class="bomba" src="picture1_copy.png" alt="L'équipe du CIJAM" onclick="openModal()">
+        </div>
+    </div>
+</section>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+<!-- JavaScript -->
+<script>
+// Function to open the modal
+function openModal() {
+    var modal = document.getElementById('myModal');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    
+    // Get the clicked image and insert it inside the modal - use its "alt" text as a caption
+    var image = document.getElementsByClassName('bomba')[0];
+    modal.style.display = "block";
+    modalImg.src = image.src;
+    captionText.innerHTML = image.alt;
+}
+
+// Function to close the modal
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() { 
+  var modal = document.getElementById('myModal');
+  modal.style.display = "none";
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="contact" class="contact">
+    <div class="social-container">
+        <h2>Contactez-nous</h2>
+        <div class="contact-info">
+		<p style="margin-right: 2px; display: inline;">Email:</p><a href="mailto:usatcijam@gmail.com">			usatcijam@gmail.com</a>
+        	<p>Phone: +225 07 05 55 9812</p>
+        </div>
+        <div class="social-networks">
+            <h3>Suivez-nous sur les réseaux sociaux</h3>
+
+            <ul>
+		<button class="learn-more">
+    			<a href="https://www.instagram.com/cijam.ci/" target="_blank">
+				<span aria-hidden="true" class="circle"></span>
+	        		<span aria-hidden="true" class="icon arrow"></span>
+        			<span class="button-text">Instagram</span>
+    			</a>
+		</button>
+
+		<button class="learn-more">
+			<a href="https://www.tiktok.com/@cijam.ci" target="_blank">
+			        <span aria-hidden="true" class="circle"></span>
+			        <span class="icon arrow"></span>
+			        <span class="button-text">TikTok</span>
+			</a>
+		</button>
+
+            </ul>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
